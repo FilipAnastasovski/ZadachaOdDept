@@ -1,0 +1,30 @@
+<!-- this is the additional html for 2 forms , one to ever information, email and name, and the other for thank you  -->
+{% extends 'assignment' %}
+
+{% block subscribeForm %}
+
+<div class="newsletter-subscibe-form">
+      <form class="form">
+        <label for="email">Enter your email address</label><br><br>
+        <input type="email" id="email" name="email" placeholder="example@blabla.com" pattern=".+@globex.com" size="30" required><br><br>
+
+        <input type="name" id="firstName" name="firstName" placeholder="First Name"  size="15" required>
+        <input type="name" id="lastName" name="lastName" placeholder="Last Name"  size="15" required>
+        
+        <input type="submit">
+      </form>
+
+    </div>
+
+{% endblock %}
+
+{% block thankYouForm %}
+
+<div class="thank-you">
+   <form>
+      <p>Thank you for subscribing</p> <br><br>
+      <button onclick="myFunction()">Close</button>
+   </form>   
+</div>
+
+{% endblock %}
